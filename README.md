@@ -32,7 +32,7 @@ Auto-deploy en Vercel con cada push a `main`.
 
 - **Titular**: Xavier Julià Giménez
 - **NIF**: 77114546P
-- **Dirección**: C. Sant Tomàs, 10, 08730 Santa Margarida i els Monjos, Barcelona
+- **Dirección**: C. Gomis, 34-36, 08023 Barcelona
 - **Email**: hola@respondeya.es
 
 ## 📅 Historial
