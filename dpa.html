@@ -89,9 +89,8 @@
 <ul>
 <li><strong>Identidad:</strong> Xavier Julià Giménez</li>
 <li><strong>NIF:</strong> 77114546P</li>
-<li><strong>Régimen:</strong> Trabajador autónomo</li>
 <li><strong>Domicilio:</strong> C. Gomis, 34-36, 08023 Barcelona</li>
-<li><strong>Email:</strong> privacidad@respondeya.es</li>
+<li><strong>Email:</strong> hola@respondeya.es</li>
 <li><strong>Teléfono:</strong> +34 686 37 36 15</li>
 </ul>
 
@@ -192,22 +191,17 @@
 <li>Auditoría externa de seguridad realizada en abril 2026 con resolución de vulnerabilidades identificadas</li>
 </ul>
 
-<h3>6.4 Subencargados</h3>
+<h3>6.4 Subencargados — categorías</h3>
 
-<p>El Cliente <strong>autoriza expresamente</strong> al Encargado a subcontratar el tratamiento con los siguientes subencargados:</p>
+<p>El Cliente <strong>autoriza expresamente</strong> al Encargado a subcontratar el tratamiento con proveedores de las siguientes categorías. Por motivos de seguridad publicamos solo las categorías; la lista nominal actualizada está disponible bajo petición a <a href="mailto:hola@respondeya.es">hola@respondeya.es</a>.</p>
 
 <table>
-<tr><th>Subencargado</th><th>Servicio</th><th>Localización</th><th>Garantías</th></tr>
-<tr><td>**OpenAI Ireland Ltd.**</td><td>Modelos de IA generativa</td><td>UE + EEUU</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Stripe Payments Europe Ltd.**</td><td>Procesamiento pagos</td><td>UE + EEUU</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Supabase Inc.**</td><td>Base de datos PostgreSQL</td><td>EEUU (servidores en eu-west-1)</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Resend**</td><td>Envío de emails transaccionales</td><td>EEUU</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Render Inc.**</td><td>Hosting backend</td><td>EEUU (servidores en Frankfurt)</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Vercel Inc.**</td><td>Hosting frontend portal</td><td>EEUU + CDN global</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Cloudflare Inc.**</td><td>CDN y WAF</td><td>EEUU + UE</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Make.com (Celonis SE)**</td><td>Automatizaciones internas</td><td>República Checa (UE)</td><td>DPA UE</td></tr>
-<tr><td>**Base44**</td><td>Apps administrativas internas</td><td>EEUU</td><td>DPA + CCT UE</td></tr>
-<tr><td>**Nominalia (Dada SpA)**</td><td>Email empresarial</td><td>Italia (UE)</td><td>DPA UE</td></tr>
+<tr><th>Categoría</th><th>Servicio</th><th>Localización</th><th>Garantías</th></tr>
+<tr><td>Modelos de IA generativa</td><td>Procesar las conversaciones del agente</td><td>UE + EEUU</td><td>CCT UE + DPA del proveedor</td></tr>
+<tr><td>Procesamiento de pagos (PCI-DSS)</td><td>Cobro de cuotas y facturación</td><td>UE + EEUU</td><td>CCT UE + DPA del proveedor</td></tr>
+<tr><td>Infraestructura cloud (BD, hosting, CDN, WAF)</td><td>Almacenamiento, ejecución y entrega</td><td>EEUU con servidores principalmente en UE</td><td>CCT UE + DPA</td></tr>
+<tr><td>Email transaccional</td><td>Magic links, notificaciones, soporte</td><td>UE / EEUU</td><td>CCT UE + DPA</td></tr>
+<tr><td>Plataformas internas de automatización y gestión</td><td>Workflows operativos</td><td>UE</td><td>DPA UE</td></tr>
 </table>
 
 <h4>Nuevos subencargados</h4>
@@ -241,7 +235,7 @@
 <li>Datos para defensa de reclamaciones: conservados durante el plazo de prescripción</li>
 </ul>
 
-<p>El Cliente puede solicitar <strong>certificado de destrucción</strong> mediante email a privacidad@respondeya.es.</p>
+<p>El Cliente puede solicitar <strong>certificado de destrucción</strong> mediante email a hola@respondeya.es.</p>
 
 <h3>6.8 Disponibilidad de información</h3>
 <p>RespondeYA pondrá a disposición del Cliente toda la información necesaria para demostrar el cumplimiento de las obligaciones del Art. 28 RGPD, incluyendo:</p>
@@ -334,73 +328,12 @@
 
 <hr>
 
-<h2>ANEXO I — Medidas técnicas y organizativas (resumen)</h2>
 
-<h3>Control de acceso</h3>
-<ul>
-<li>Autenticación con magic links de un solo uso (clientes)</li>
-<li>API tokens y JWT (admin)</li>
-<li>Audit log de operaciones administrativas</li>
-<li>Revocación automática de sesiones tras cancelación</li>
-</ul>
+<h2>ANEXO — Contacto para temas de privacidad</h2>
 
-<h3>Cifrado</h3>
-<ul>
-<li>TLS 1.2+ en todas las comunicaciones</li>
-<li>AES-256 en reposo (proveedor cloud)</li>
-<li>Hashing de contraseñas (no almacenamos contraseñas planas)</li>
-</ul>
-
-<h3>Disponibilidad</h3>
-<ul>
-<li>Redundancia de infraestructura</li>
-<li>Backups diarios</li>
-<li>Monitorización 24/7</li>
-<li>Plan de continuidad y recuperación</li>
-</ul>
-
-<h3>Seguridad aplicación</h3>
-<ul>
-<li>Helmet (security headers)</li>
-<li>Rate limiting contra ataques automatizados</li>
-<li>CORS estricto</li>
-<li>Sanitización de inputs</li>
-<li>Firma criptográfica de webhooks</li>
-<li>Atomicidad de operaciones críticas</li>
-</ul>
-
-<h3>Auditoría</h3>
-<ul>
-<li>Auditoría de seguridad realizada en abril 2026</li>
-<li>Vulnerabilidades críticas/altas resueltas antes del despliegue público</li>
-<li>Triple verificación cruzada (Claude AI + ChatGPT + verificación con tools privilegiadas)</li>
-<li>Plan de auditorías periódicas anuales</li>
-</ul>
-
-<h3>Personal</h3>
-<ul>
-<li>Acceso por necesidad estricta (need-to-know)</li>
-<li>Formación en privacidad y seguridad</li>
-<li>Acuerdos de confidencialidad</li>
-<li>Auditoría de accesos privilegiados</li>
-</ul>
+<p>Para el ejercicio de derechos del Visitante, notificación de brechas, información sobre subencargados, solicitudes de auditoría o cualquier otra cuestión derivada de este DPA, escribir a <a href="mailto:hola@respondeya.es">hola@respondeya.es</a>. RespondeYA responderá conforme a los plazos legalmente exigibles y a los previstos en este DPA.</p>
 
 <hr>
-
-<h2>ANEXO II — Procedimiento de contacto para temas de privacidad</h2>
-
-<table>
-<tr><th>Solicitud</th><th>Email</th><th>Plazo de respuesta</th></tr>
-<tr><td>Ejercicio de derechos del Visitante</td><td>privacidad@respondeya.es</td><td>30 días naturales</td></tr>
-<tr><td>Notificación de brecha</td><td>privacidad@respondeya.es</td><td>72 horas</td></tr>
-<tr><td>Solicitud de información sobre subencargados</td><td>privacidad@respondeya.es</td><td>15 días hábiles</td></tr>
-<tr><td>Solicitud de auditoría</td><td>privacidad@respondeya.es</td><td>A convenir</td></tr>
-<tr><td>Modificación contractual</td><td>legal@respondeya.es</td><td>15 días hábiles</td></tr>
-</table>
-
-<hr>
-
-<p><em>Documento generado el 29 de abril de 2026 — versión 1.0</em></p>
 
   <div class="footer">
     <p><strong>RespondeYA</strong> · Xavier Julià Giménez · NIF 77114546P</p>
