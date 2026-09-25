@@ -81,10 +81,13 @@
 <tr><td><code>rya_cookies</code></td><td>Almacenamiento local, propio</td><td>Recordar tu elección en el aviso de cookies</td><td>Hasta que lo borres</td><td>No (técnica)</td></tr>
 <tr><td>Aviso del Kit VeriFactu</td><td>Almacenamiento de sesión, propio</td><td>No volver a mostrarte el aviso en la misma visita</td><td>Hasta cerrar el navegador</td><td>No (técnica)</td></tr>
 <tr><td>Métricas de rendimiento (Vercel Speed Insights)</td><td>Sin cookies</td><td>Medir la velocidad de carga de las páginas de forma agregada</td><td>—</td><td>No instala cookies</td></tr>
-<tr><td>Protección anti-bots (Cloudflare Turnstile)</td><td>Tercero, solo en la demo por teléfono</td><td>Comprobar que quien pide la demo es una persona</td><td>La de la comprobación</td><td>No (necesaria para el servicio que pides)</td></tr>
+<tr><td>Estadísticas de visitas (Vercel Web Analytics)</td><td>Sin cookies</td><td>Contar visitas de forma agregada, sin identificarte</td><td>—</td><td>No instala cookies</td></tr>
+<tr><td><code>lia_voice_autoplay</code></td><td>Almacenamiento local, propio</td><td>Recordar si quieres que la voz de LIA se reproduzca automáticamente</td><td>Hasta que lo borres</td><td>No (técnica)</td></tr>
+<tr><td>Contexto del plan</td><td>Almacenamiento de sesión, propio</td><td>Recordar el plan que has elegido durante el proceso de contratación</td><td>Hasta cerrar el navegador</td><td>No (técnica)</td></tr>
+<tr><td>Protección anti-bots (Cloudflare Turnstile)</td><td>Tercero, solo en la demo por teléfono y en la prueba con tu tienda</td><td>Comprobar que quien pide la demo es una persona</td><td>La de la comprobación</td><td>No (necesaria para el servicio que pides)</td></tr>
 </table>
 
-<p><strong>Análisis y marketing:</strong> hoy no usamos cookies de análisis ni de marketing en respondeya.es. El aviso de cookies te deja aceptarlas o rechazarlas por si las activamos; si lo hacemos, actualizaremos esta tabla antes y solo se usarán con tu consentimiento.</p>
+<p><strong>Análisis y marketing:</strong> hoy no usamos cookies de análisis ni de marketing en respondeya.es. Para contar visitas usamos Vercel Web Analytics, que no instala cookies. El aviso de cookies te deja aceptarlas o rechazarlas por si las activamos; si lo hacemos, actualizaremos esta tabla antes y solo se usarán con tu consentimiento.</p>
 
 <h2>4. Qué usamos en panel.respondeya.es</h2>
 
@@ -92,6 +95,7 @@
 <tr><th>Nombre</th><th>Tipo</th><th>Para qué</th><th>Duración</th></tr>
 <tr><td><code>omniflow_portal_session</code></td><td>Almacenamiento local, propio</td><td>Mantener tu sesión iniciada</td><td>Hasta cerrar sesión o que caduque</td></tr>
 <tr><td><code>sidebar_state</code></td><td>Cookie propia</td><td>Recordar si el menú lateral está abierto</td><td>7 días</td></tr>
+<tr><td>Estadísticas de visitas (Vercel Web Analytics)</td><td>Sin cookies</td><td>Contar visitas de forma agregada, sin identificarte</td><td>—</td></tr>
 <tr><td>SDK de Meta</td><td>Tercero, solo al conectar WhatsApp</td><td>Iniciar sesión en Meta para conectar tu cuenta de WhatsApp Business, cuando tú lo pides</td><td>Las de Meta</td></tr>
 </table>
 <p>Son necesarias para el servicio que usas, por lo que no requieren consentimiento.</p>
@@ -101,7 +105,7 @@
 
 <h2>6. Cómo gestionarlas</h2>
 <ul>
-<li>Desde el aviso de cookies de respondeya.es.</li>
+<li>Borrando el almacenamiento del sitio en tu navegador; el aviso volverá a aparecer.</li>
 <li>Desde tu navegador, borrando las cookies y los datos del sitio (Chrome: Configuración → Privacidad y seguridad; Firefox: Ajustes → Privacidad; Safari: Ajustes → Privacidad; Edge: Configuración → Cookies y permisos del sitio).</li>
 </ul>
 <p>Si bloqueas las técnicas, el Panel puede no funcionar.</p>
