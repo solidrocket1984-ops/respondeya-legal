@@ -65,8 +65,8 @@
   <a href="https://www.respondeya.es" class="nav-back">← Volver a respondeya.es</a>
 <h1>Política de Cookies</h1>
 
-<p><strong>Última actualización:</strong> 25 de septiembre de 2026</p>
-<p><strong>Versión:</strong> 2.0</p>
+<p><strong>Última actualización:</strong> 6 de octubre de 2026</p>
+<p><strong>Versión:</strong> 2.1</p>
 
 <h2>1. Qué son</h2>
 <p>Las cookies y tecnologías parecidas (como el almacenamiento local del navegador) guardan pequeñas informaciones en tu dispositivo, por ejemplo para recordar una preferencia o mantener tu sesión.</p>
@@ -100,8 +100,19 @@
 </table>
 <p>Son necesarias para el servicio que usas, por lo que no requieren consentimiento.</p>
 
-<h2>5. El asistente en la web de un Cliente</h2>
-<p>El widget de chat de RespondeYA que un Cliente instala en su web no instala cookies en el navegador del visitante. Si eres Cliente y necesitas esta información para tu propia política, escríbenos.</p>
+<h2>5. El chat en la web de un Cliente</h2>
+<p>El chat de RespondeYA que un Cliente pone en su web no usa cookies. Guarda tres datos en el navegador del visitante, y solo desde que el visitante abre el chat o escribe en él:</p>
+
+<table>
+<tr><th>Nombre</th><th>Tipo</th><th>Para qué</th><th>Duración</th></tr>
+<tr><td><code>ry_chat_session_</code> y el identificador del Cliente</td><td>Almacenamiento local</td><td>Reconocer la conversación para que el chat no empiece de cero al cambiar de página</td><td>Deja de valer a los 30 días sin usar el chat</td></tr>
+<tr><td><code>ry_chat_msgs_</code> y el identificador del Cliente</td><td>Almacenamiento de sesión</td><td>Volver a enseñar los últimos mensajes al cambiar de página</td><td>Hasta cerrar la pestaña</td></tr>
+<tr><td><code>ry_chat_cart_notice_</code> y el identificador del Cliente</td><td>Almacenamiento local</td><td>Recordar que ya se ha enseñado el aviso del carrito</td><td>Hasta que lo borres</td></tr>
+</table>
+
+<p>Desde ese momento, el chat lee la página de esa web que mira el visitante: la dirección sin parámetros, el título y, si es la ficha de un producto, su nombre y su precio. En tiendas Shopify, WooCommerce y PrestaShop lee también los productos de su carrito: nombre, cantidad, precio, total y moneda. No lee su nombre, su email, su dirección ni sus cupones. Lo envía a RespondeYA para que LIA conteste sobre lo que el visitante está viendo, y se guarda con la conversación. Cuando lee un carrito con productos, el chat lo avisa con una línea. No se lee nada de quien no abre el chat.</p>
+
+<p>Si eres Cliente, cuéntalo en la política de privacidad y de cookies de tu web. Puedes copiar este texto: «El chat de esta web lo presta RespondeYA. Si lo abres, guarda en tu navegador un identificador de la conversación, que deja de valer a los 30 días sin usar el chat, y lee la página que estás mirando y, si hay tienda, los productos de tu carrito, para poder contestarte.»</p>
 
 <h2>6. Cómo gestionarlas</h2>
 <ul>
