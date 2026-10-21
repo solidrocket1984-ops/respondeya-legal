@@ -38,3 +38,4 @@ Auto-deploy en Vercel con cada push a `main`.
 ## 📅 Historial
 
 - **v1.0 — 29 de abril de 2026**: documentos iniciales pre-Stripe LIVE.
+- **v1.x — 21 de octubre de 2026**: Gomis 34-36 pasa a figurar como domicilio de gestión administrativa (036 del 21-oct), no como domicilio fiscal.
